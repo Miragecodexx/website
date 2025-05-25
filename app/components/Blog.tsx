@@ -31,7 +31,7 @@ const blogPosts = [
     id: 3,
     title: "Branding for Nigerian Entrepreneurs",
     excerpt: "Essential branding strategies for Nigerian businesses looking to compete in the global marketplace.",
-    image: "/placeholder1.jpg?height=300&width=400",
+    image: "/placeholder3.png?height=300&width=400",
     date: "2024-01-05",
     readTime: "6 min read",
     category: "Branding",

@@ -10,7 +10,7 @@ const testimonials = [
     name: "Sarah Adebayo",
     role: "CEO, Lagos Tech Hub",
     company: "Lagos Tech Hub",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/ceo.jpeg?height=80&width=80",
     content:
       "Oladimeji transformed our office space into a true reflection of our brand. His architectural approach to branding is revolutionary. The space now tells our story and inspires our team daily.",
     rating: 5,
@@ -21,7 +21,7 @@ const testimonials = [
     name: "Pastor Michael Okafor",
     role: "Senior Pastor",
     company: "Faith Community Church",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/pastor.jpeg?height=80&width=80",
     content:
       "Working with The Christian Creative was a blessing. Oladimeji understood our vision and created a brand identity that perfectly captures our church's heart and mission. Truly exceptional work.",
     rating: 5,
@@ -32,20 +32,20 @@ const testimonials = [
     name: "Kemi Adeyemi",
     role: "Founder",
     company: "Afro Beauty Co.",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/founder.jpeg?height=80&width=80",
     content:
       "The content creation strategy from FotoPool increased our social media engagement by 300%. Oladimeji's team understands the Nigerian market and global trends perfectly.",
-    rating: 5,
+    rating: 4,
     project: "Content Creation",
   },
 ]
 
 const clientLogos = [
-  { name: "Lagos Tech Hub", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Faith Community", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Afro Beauty Co", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Nigerian Fintech", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Retail Store", logo: "/placeholder.svg?height=60&width=120" },
+  { name: "Lagos Tech Hub", logo: "/download.jpeg?height=60&width=120" },
+  { name: "Faith Community", logo: "/faith.jpeg?height=60&width=120" },
+  { name: "Afro Beauty Co", logo: "/afro hair.jpeg?height=60&width=120" },
+  { name: "Nigerian Fintech", logo: "/fintech.jpeg?height=60&width=120" },
+  { name: "Retail Store", logo: "/retail.jpeg?height=60&width=120" },
 ]
 
 export default function Testimonials() {
@@ -164,11 +164,11 @@ export default function Testimonials() {
             {clientLogos.map((client, index) => (
               <div key={index} className="flex justify-center">
                 <Image
-                  src={client.logo || "/placeholder.svg"}
+                  src={client.logo || "/download.jpeg"}
                   alt={client.name}
                   width={120}
                   height={60}
-                  className="max-h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-12 w-auto object-contain filter grayscale hover:grayscale-80 transition-all duration-300"
                 />
               </div>
             ))}
